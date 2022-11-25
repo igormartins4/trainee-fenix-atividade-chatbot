@@ -1,3 +1,4 @@
+from produto import Produto
 
 def mostrarMenu():
     print('==============================================')
