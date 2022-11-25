@@ -1,7 +1,10 @@
+from produto import Produto
+
+
 class Menu:
     def __init__(self):
         # self.escolha = escolha
-        
+
         print('==============================================')
         print('Bem vindo ao Chatbot de atendimento!! :)')
         print('Os seguintes comandos estão disponíveis:')
@@ -14,3 +17,6 @@ class Menu:
         escolha = input()
 
         print(escolha)
+
+        if escolha == 1:
+            Produto.adicionarProduto()
