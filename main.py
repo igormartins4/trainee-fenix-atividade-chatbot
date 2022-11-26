@@ -1,4 +1,4 @@
-from menu import Menu
+from menu import mostrarMenu
 from produto import Produto
 
-init = Menu()
+mostrarMenu()
