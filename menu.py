@@ -1,3 +1,5 @@
+from produto import Produto
+
 
 def mostrarMenu():
 
@@ -9,11 +11,24 @@ def mostrarMenu():
     print('3 - Mostrar carrinho')
     print('4 - Fechar carrinho de compras')
     print('==============================================')
-    print('Sua escolha: ')
 
-    escolha = input()
+    while True:
+        print('Sua escolha: ')
 
-    print(escolha)
+        escolha = int(input())
 
-    if escolha == 1:
-        Produto.adicionarProduto()
+        match (escolha):
+            case 1:
+                print('Ok 1')
+                break
+            case 2:
+                print('Ok 2')
+                break
+            case 3:
+                print('Ok 3')
+                break
+            case 4:
+                print('Ok 4')
+                break
+            case _:
+                print('Opção inválida, tente novamente!')
