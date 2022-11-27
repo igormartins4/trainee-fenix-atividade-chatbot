@@ -28,4 +28,4 @@ produtoDois = Produto('Avião', 14)
 produtoTres = Produto('Barcos', 7)
 produtoQuatro = Produto('Moto', 8)
 
-print(produtoUm.nome)
+print(produtoUm.nome, produtoUm.quantidade)
