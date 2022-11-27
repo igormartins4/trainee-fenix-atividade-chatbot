@@ -1,5 +1,5 @@
 from produto import Produto, adicionarProduto
-
+from carrinho import Carrinho, mostrarCarrinho, fecharCarrinho
 
 def mostrarMenu():
 
@@ -25,10 +25,10 @@ def mostrarMenu():
                 remover = Produto.removerProduto()
                 break
             case 3:
-                mostrar = Carrinho.mostrar()
+                mostrar = Carrinho.mostrarCarrinho()
                 break
             case 4:
-                finalizar = Carrinho.finalizar()
+                finalizar = Carrinho.fecharCarrinho()
                 break
             case _:
                 print('Opção inválida, tente novamente!')
