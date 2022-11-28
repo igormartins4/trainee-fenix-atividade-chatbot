@@ -1,12 +1,20 @@
+def adicionarProduto():
+    print('==============================================')
+    print('Ótimo! Informe o produto desejado e a quantidade a adicionar: ')
+    print('Faça suas escolhas ')
+
+    nomeProdutoEscolhido = input('Nome produto: ')
+    quantidadeProdutoEscolhido = int(input('Quantidade produto: '))
+
+    produtoEscolhido = Produto(
+        nomeProdutoEscolhido, quantidadeProdutoEscolhido)
+    # print(produtoEscolhido.nome, produtoEscolhido.quantidade)
+
+
 class Produto:
     def __init__(self, nome, quantidade):
         self.nome = nome
         self.quantidade = quantidade
-
-    def adicionarProduto(self):
-        print('==============================================')
-        print('Ótimo! Informe o produto desejado e a quantidade a adicionar: ')
-        print('Sua escolha: ')
 
     @property
     def nome(self):
@@ -28,4 +36,4 @@ produtoDois = Produto('Avião', 14)
 produtoTres = Produto('Barcos', 7)
 produtoQuatro = Produto('Moto', 8)
 
-print(produtoUm.nome, produtoUm.quantidade)
+# print(produtoUm.nome, produtoUm.quantidade)

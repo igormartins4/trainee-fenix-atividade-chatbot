@@ -1,5 +1,6 @@
-from produto import Produto, adicionarProduto
-from carrinho import Carrinho, mostrarCarrinho, fecharCarrinho
+from produto import adicionarProduto
+# from carrinho import Carrinho, mostrarCarrinho, fecharCarrinho
+
 
 def mostrarMenu():
 
@@ -19,16 +20,16 @@ def mostrarMenu():
 
         match (escolha):
             case 1:
-                adicionar = Produto.adicionarProduto()
+                adicionarProduto()
                 break
             case 2:
-                remover = Produto.removerProduto()
+                # remover = Produto.removerProduto()
                 break
             case 3:
-                mostrar = Carrinho.mostrarCarrinho()
+                # mostrar = Carrinho.mostrarCarrinho()
                 break
             case 4:
-                finalizar = Carrinho.fecharCarrinho()
+                # finalizar = Carrinho.fecharCarrinho()
                 break
             case _:
                 print('Opção inválida, tente novamente!')
