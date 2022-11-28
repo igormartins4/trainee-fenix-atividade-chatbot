@@ -1,7 +1,6 @@
 def adicionarProduto():
     print('==============================================')
     print('Ótimo! Informe o produto desejado e a quantidade a adicionar: ')
-    print('Faça suas escolhas ')
 
     nomeProdutoEscolhido = input('Nome produto: ')
     quantidadeProdutoEscolhido = int(input('Quantidade produto: '))

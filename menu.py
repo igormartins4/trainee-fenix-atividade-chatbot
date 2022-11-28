@@ -14,9 +14,8 @@ def mostrarMenu():
     print('==============================================')
 
     while True:
-        print('Sua escolha: ')
-
-        escolha = int(input())
+        
+        escolha = int(input('Sua escolha: '))
 
         match (escolha):
             case 1:
