@@ -28,7 +28,7 @@ estoque = [produtoUm, produtoDois, produtoTres, produtoQuatro]
 # print(produtoUm.nome, produtoUm.quantidade)
 
 
-def adicionarItemCarrinho():
+def PerguntaItemCarrinho():
     print('==============================================')
     print('Ótimo! Informe o produto desejado e a quantidade a adicionar no carrinho: ')
 
@@ -37,11 +37,18 @@ def adicionarItemCarrinho():
 
     verificaEstoque(nomeProdutoEscolhido, quantidadeProdutoEscolhido)
 
-    produtoEscolhido = Produto(
-        nomeProdutoEscolhido, quantidadeProdutoEscolhido)
-    # print(produtoEscolhido.nome, produtoEscolhido.quantidade)
-
 
 def verificaEstoque(nomeProdutoEscolhido, quantidadeProdutoEscolhido):
     for i in estoque:
-        print(i.nome)
+        if nomeProdutoEscolhido == i.nome:
+            adicionaItemCarrinho(nomeProdutoEscolhido,
+                                 quantidadeProdutoEscolhido)
+            break
+            # print(produtoEscolhido.nome, produtoEscolhido.quantidade)
+        else:
+            print('Item inexistente no estoque')
+
+
+def adicionaItemCarrinho(nomeProdutoEscolhido, quantidadeProdutoEscolhido):
+    Produto(nomeProdutoEscolhido, quantidadeProdutoEscolhido)
+    print('Item adicionado ao carrinho')
