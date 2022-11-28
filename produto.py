@@ -1,15 +1,3 @@
-def adicionarProduto():
-    print('==============================================')
-    print('Ótimo! Informe o produto desejado e a quantidade a adicionar: ')
-
-    nomeProdutoEscolhido = input('Nome produto: ')
-    quantidadeProdutoEscolhido = int(input('Quantidade produto: '))
-
-    produtoEscolhido = Produto(
-        nomeProdutoEscolhido, quantidadeProdutoEscolhido)
-    # print(produtoEscolhido.nome, produtoEscolhido.quantidade)
-
-
 class Produto:
     def __init__(self, nome, quantidade):
         self.nome = nome
@@ -35,4 +23,25 @@ produtoDois = Produto('Avião', 14)
 produtoTres = Produto('Barcos', 7)
 produtoQuatro = Produto('Moto', 8)
 
+estoque = [produtoUm, produtoDois, produtoTres, produtoQuatro]
+
 # print(produtoUm.nome, produtoUm.quantidade)
+
+
+def adicionarItemCarrinho():
+    print('==============================================')
+    print('Ótimo! Informe o produto desejado e a quantidade a adicionar no carrinho: ')
+
+    nomeProdutoEscolhido = input('Nome produto: ')
+    quantidadeProdutoEscolhido = int(input('Quantidade produto: '))
+
+    verificaEstoque(nomeProdutoEscolhido, quantidadeProdutoEscolhido)
+
+    produtoEscolhido = Produto(
+        nomeProdutoEscolhido, quantidadeProdutoEscolhido)
+    # print(produtoEscolhido.nome, produtoEscolhido.quantidade)
+
+
+def verificaEstoque(nomeProdutoEscolhido, quantidadeProdutoEscolhido):
+    for i in estoque:
+        print(i.nome)
