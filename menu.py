@@ -1,17 +1,15 @@
 from produto import PerguntaItemCarrinho
-# from carrinho import Carrinho, mostrarCarrinho, fecharCarrinho
-
 
 def mostrarMenu():
 
-    print('==============================================')
+    print('===================================================================')
     print('Bem vindo ao Chatbot de atendimento!! :)')
     print('Os seguintes comandos estão disponíveis:')
     print('1 - Adicionar item')
     print('2 - Remover item')
     print('3 - Mostrar carrinho')
     print('4 - Fechar carrinho de compras')
-    print('==============================================')
+    print('===================================================================')
 
     while True:
         
